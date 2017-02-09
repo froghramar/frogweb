@@ -1,0 +1,42 @@
+header {
+    position: fixed;
+    top: 0px;
+    background: blue;
+    height: 50px;
+    width: 1200px;
+    left: calc((100% - 1200px) / 2);
+}
+
+main > aside {
+    position: fixed;
+    top: 50px;
+    background: cyan;
+    height: calc(100% - 100px);
+    width: 200px;
+    left: calc(((100% - 1200px) / 2));
+    overflow-y: scroll;
+}
+
+main > frogweb-content {
+    position: fixed;
+    top: 50px;
+    background: green;
+    height: calc(100% - 100px);
+    left: calc((100% - 1200px) / 2 + 200px);
+    right: calc((100% - 1200px) / 2);
+    overflow-y: scroll;
+}
+
+.frogweb-scope {
+    display: block;
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: blue;
+    height: 50px;
+    width: 1200px;
+    left: calc((100% - 1200px) / 2);
+}
