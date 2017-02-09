@@ -1,30 +1,9 @@
 header {
     position: fixed;
     top: 0px;
-    background: blue;
     height: 50px;
     width: 1200px;
     left: calc((100% - 1200px) / 2);
-}
-
-main > aside {
-    position: fixed;
-    top: 50px;
-    background: cyan;
-    height: calc(100% - 100px);
-    width: 200px;
-    left: calc(((100% - 1200px) / 2));
-    overflow-y: scroll;
-}
-
-main > frogweb-content {
-    position: fixed;
-    top: 50px;
-    background: green;
-    height: calc(100% - 100px);
-    left: calc((100% - 1200px) / 2 + 200px);
-    right: calc((100% - 1200px) / 2);
-    overflow-y: scroll;
 }
 
 .frogweb-scope {
@@ -32,10 +11,61 @@ main > frogweb-content {
     position: relative;
 }
 
+header > .frogweb-scope{
+    height: 50px;
+}
+
+.frogweb-vertical-center{
+    display: table;
+    position: absolute;
+    height: 50px;
+}
+
+frogweb-title {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #666666;
+    text-transform: capitalize;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+frogweb-title:hover {
+    color: #3366cc;
+    cursor: pointer;
+}
+
+frogweb-slogan {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: end;
+    letter-spacing: 5px;
+}
+
+main > frogweb-side-nav {
+    position: fixed;
+    top: 50px;
+    height: calc(100% - 100px);
+    width: 250px;
+    left: calc(((100% - 1200px) / 2));
+    overflow-y: scroll;
+}
+
+main > frogweb-content {
+    position: fixed;
+    top: 50px;
+    height: calc(100% - 100px);
+    left: calc((100% - 1200px) / 2 + 250px);
+    right: calc((100% - 1200px) / 2);
+    overflow-y: scroll;
+}
+
 footer {
     position: fixed;
     bottom: 0px;
-    background: blue;
+    background: cyan;
     height: 50px;
     width: 1200px;
     left: calc((100% - 1200px) / 2);
