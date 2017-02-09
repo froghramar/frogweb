@@ -21,7 +21,11 @@ header > .frogweb-scope{
     height: 50px;
 }
 
-frogweb-title {
+a {
+    text-decoration: none;
+}
+
+.frogweb-home-link {
     display: table-cell;
     vertical-align: middle;
     font-weight: bold;
@@ -31,7 +35,7 @@ frogweb-title {
     letter-spacing: 5px;
 }
 
-frogweb-title:hover {
+.frogweb-home-link:hover {
     color: #3366cc;
     cursor: pointer;
 }

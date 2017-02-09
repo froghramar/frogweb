@@ -4,36 +4,21 @@
 	<meta charset="utf-8" />
     <title>Frogweb Manual</title>
     <link rel="stylesheet" type="text/css" href="frogweb.site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="frogweb.init.js"></script>
 </head>
-<body>
+<body ng-app="frogweb">
     <header>
         <div class="frogweb-vertical-center">
-            <frogweb-title> frogweb </frogweb-title>
+            <a href="#" class="frogweb-home-link"> frogweb </a>
             <frogweb-slogan> Slogan For The Website Goes Here </frogweb-slogan>
         </div>
     </header>
     <main>
         <frogweb-side-nav>
-            <div class="frogweb-scope">
-                <h1>Hello World</h1>
-                <h2>How Are You</h2>
-                <p>I'm Fine</p>
-                <h1>Hello World</h1>
-                <h2>How Are You</h2>
-                <p>I'm Fine</p>
-                <h1>Hello World</h1>
-                <h2>How Are You</h2>
-                <p>I'm Fine</p>
-                <h1>Hello World</h1>
-                <h2>How Are You</h2>
-                <p>I'm Fine</p>
-                <h1>Hello World</h1>
-                <h2>How Are You</h2>
-                <p>I'm Fine</p>
-                <h1>Hello World</h1>
-                <h2>How Are You</h2>
-                <p>I'm Fine</p>
-            </div>
+            <frogweb-links class="frogweb-scope">
+                
+            </frogweb-links>
         </frogweb-side-nav>
         <frogweb-content>
             <div class="frogweb-scope">
@@ -60,7 +45,6 @@
     </main>
     <footer>
         jbvfhkjdhk
-    </footer>
-    
+    </footer> 
 </body>
 </html>
